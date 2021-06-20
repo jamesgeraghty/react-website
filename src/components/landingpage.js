@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Cell } from 'react-mdl';
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 class Landing extends Component{
     render() {
@@ -14,9 +15,26 @@ class Landing extends Component{
                 />
 
                 <div className="banner-text">
-                    <h1> Computer Science Student</h1>
+                    <h1> Software Engineer</h1>
 
+                <hr/>
 
+                <p>HTML/CSS | React | Javascript | NodeJS | Github
+        <div className="social-links">
+             <a href="http://www.google.com" target="_blank">
+                 <FaGithub />
+             </a>
+             <a href="http://www.google.com" target="_blank">
+                 <FaLinkedinIn />
+             </a>
+             <a href="http://www.google.com" target="_blank">
+                 <FaGithub />
+             </a>
+             <a href="http://www.google.com" target="_blank">
+                 <FaGithub />
+             </a>
+            </div>
+                </p>
                 </div>
             </Cell>
             </Grid>
