@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div style={{height: '300px', position: 'relative'}}>
-    <Layout fixedHeader>
-        <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>James Geraghty</strong></span>}>
-            <Navigation>
+class App extends Component {
+  render(){
+   return (
+    <div className="demo-big-content">
+  <Layout>
+  <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>            <Navigation>
                 <Link to ="/resume">Resume</Link>
                 <Link to ="/about">Contact</Link>
                 <Link to ="/contact">About Me</Link>
                 <Link to ="/">Home</Link>
             </Navigation>
         </Header>
-        <Drawer title="Menu">
+        <Drawer title="Title">
             <Navigation>
             <Link to ="/resume">Resume</Link>
                 <Link to ="/about">Contact</Link>
@@ -32,6 +31,7 @@ function App() {
     </Layout>
 </div>
   );
+}
 }
 
 export default App;
