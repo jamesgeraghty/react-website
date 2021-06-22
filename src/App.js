@@ -11,6 +11,7 @@ class App extends Component {
   <Layout>
      <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>            
             <Navigation>
+              <Link to ="/projects">Projects</Link>
                 <Link to ="/resume">Resume</Link>
                 <Link to ="/about">Contact</Link>
                 <Link to ="/contact">About Me</Link>
@@ -19,7 +20,8 @@ class App extends Component {
         </Header>
         <Drawer title="Title">
             <Navigation>
-            <Link to ="/resume">Resume</Link>
+              <Link to ="/projects">Projects</Link>
+                <Link to ="/resume">Resume</Link>
                 <Link to ="/about">Contact</Link>
                 <Link to ="/contact">About Me</Link>
                 <Link to ="/">Home</Link>
