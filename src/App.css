@@ -40,6 +40,10 @@ height: 100%;
   color: white;
 
 }
+.header-color{
+  font-weight: bold;
+  font-size: 100px;
+}
 
 .banner-text hr {
   border-top: 5px dotted white;
